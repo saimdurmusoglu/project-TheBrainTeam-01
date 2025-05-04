@@ -4,125 +4,478 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/project-TheBrainTeam-01/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>GreenHarvest</title>
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Owl Carausel 2 CSS Link -->
+
+    <!-- styles.css link -->
     <script type="module" crossorigin src="/project-TheBrainTeam-01/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-TheBrainTeam-01/assets/styles-DvPDDfy5.css">
+    <link rel="stylesheet" crossorigin href="/project-TheBrainTeam-01/assets/index-CpGcElwO.css">
   </head>
   <body>
-    <header class="header">
+    <!-- header section -->
+<header class="header">
   <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/project-TheBrainTeam-01/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
+    <div class="desktop-header">
+      <a href="#">
+        <img
+          class="header-logo-desktop"
+          src="../img/logo-desktop.svg"
+          alt="logo"
+        />
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
-      </ul>
-    </nav>
+      <div class="mobile-header">
+        <a href="#">
+          <img class="header-logo" src="../img/logo-mobile.svg" alt="logo" />
+        </a>
+        <button
+          id="menu-open"
+          type="button"
+          class="menu-button"
+          title="menu-button"
+        >
+          <svg class="menu-icon">
+            <use href="/project-TheBrainTeam-01/assets/icons-DM4YheVS.svg#icon-menu-mobile"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="nav-container">
+        <div id="menu" class="menu">
+          <div class="nav-wrapper">
+            <div class="nav-button-wrapper">
+              <nav>
+                <ul class="nav-list">
+                  <li>
+                    <a
+                      id="about-close"
+                      href="#about"
+                      class="body-1 nav-link-box-model-how"
+                      >How It Works</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="vegetables-close"
+                      href="#vegetables"
+                      class="body-1 nav-link-box-model-vege"
+                      >Vegetables</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      id="reviews-close"
+                      href="#reviews"
+                      class="body-1 nav-link-box-model-review"
+                      >Reviews</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <button
+                id="shop-now-close"
+                class="header-btn header-button"
+                type="button"
+                onclick="location.href='#contact'"
+              >
+                SHOP NOW
+              </button>
+            </div>
+            <button type="button" id="menu-close" title="menu-close">
+              <svg class="menu-icon-close">
+                <use href="/project-TheBrainTeam-01/assets/icons-DM4YheVS.svg#icon-close-mobile"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </header>
 
 
     <main>
       <!-- Loads the specified .html file -->
-      <section class="vite-promo">
+      <!-- hero section -->
+<section class="hero">
   <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/project-TheBrainTeam-01/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
+    <div class="Left">
+      <h1 class="H1">organic vegetables to your diet today!</h1>
+      <p class="body-1">
+        Our expertly curated vegetable baskets are made with the freshest,
+        highest quality vegetables available. Fresh Harvest Box has got you
+        covered. Fresh, high-quality vegetables in expertly curated vegetable
+        baskets delivered to you.
+      </p>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    <div class="Right"></div>
   </div>
 </section>
 
-      <article class="badges">
+      <!-- about section -->
+<section class="about" id="about">
   <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
+    <div class="top-about">
+      <div class="left">
+        <div class="image"></div>
+      </div>
+    </div>
+    <div class="bottom-about">
+      <div class="right">
+        <div class="content">
+          <h3 class="H3">
+            To Order Your
+            <span>Vegetable</span> Basket, Simply Follow These
+            <span>Easy Steps</span>
+          </h3>
+          <p class="body-1">
+            Our baskets are assembled with care and delivered straight to your
+            doorstep, so you can enjoy the taste of fresh fruit without ever
+            leaving your home.
+          </p>
+        </div>
+        <div class="block">
+          <div class="box">
+            <div><p class="Accent-text">1</p></div>
+            <p class="body-1">
+              Just choose <span class="body-2"> the vegetable</span> you want to
+              order by clicking on the checkboxes
+              <span class="body-2"> next to it.</span>
+            </p>
+          </div>
+          <div class="box">
+            <div><p class="Accent-text">2</p></div>
+            <p class="body-1">
+              Click on <span class="body-2">the basket</span> and fill out the
+              form.
+            </p>
+          </div>
+          <div class="box">
+            <div><p class="Accent-text">3</p></div>
+            <p class="body-1">
+              Sit back and relax! Your
+              <span class="body-2">fresh vegetables</span> basket will be
+              delivered.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- advertisement section -->
+<section class="advertisement">
+  <div class="container">
+    <div class="advertisement-wrapper">
+      <div class="mobile-view">
+        <h2 class="H2">
+          <span class="advertisement-box-model">DISCOUNT UP TO 40%!</span> TASTE
+          THE VITAMINS AND KEEP YOUR HEALTH
+        </h2>
+      </div>
+      <!-- desktop da görünüm -->
+      <div class="desktop-view">
+        <h2 class="H1">
+          <span class="advertisement-box-model">DISCOUNT UP TO 40%!</span> TASTE
+          THE VITAMINS AND KEEP YOUR HEALTH
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- vagatables section -->
+<section id="vegetables" class="vegetables">
+  <div class="container">
+    <div class="vegetables-header">
+      <h2 class="H2">ORGANIC <span>VEGETABLES</span></h2>
+      <p class="vegetables-description body-1">
+        Our organic vegetables are hand-picked from local farms and delivered
+        straight to your doorstep, ensuring that you get the freshest and most
+        nutritious produce possible.
+      </p>
+    </div>
+
+    <ul class="vegetables-list">
+      <li class="vegetables-list-item">
+        <div class="list-item-container">
+          <h3 class="H3">EGGPLANT</h3>
+          <p class="vegetables-price body-1">60 USD / kg</p>
+          <div class="eggplant-image"></div>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
+
+      <li class="vegetables-list-item">
+        <div class="list-item-container">
+          <h3 class="H3">LEEK</h3>
+          <p class="vegetables-price body-1">50 USD / kg</p>
+          <div class="leek-image"></div>
+        </div>
       </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
+
+      <li class="vegetables-list-item">
+        <div class="list-item-container">
+          <h3 class="H3">MUSHROOM</h3>
+          <p class="vegetables-price body-1">40 USD / kg</p>
+          <div class="mushroom-image"></div>
+        </div>
+      </li>
+
+      <li class="vegetables-list-item">
+        <div class="list-item-container">
+          <h3 class="H3">CORN</h3>
+          <p class="vegetables-price body-1">60 USD / kg</p>
+          <div class="corn-image"></div>
+        </div>
+      </li>
+
+      <li class="vegetables-list-item">
+        <div class="list-item-container">
+          <h3 class="H3">SWEET POTATOES</h3>
+          <p class="vegetables-price body-1">50 USD / kg</p>
+          <div class="potatoe-image"></div>
+        </div>
+      </li>
+
+      <li class="vegetables-list-item">
+        <div class="list-item-container">
+          <h3 class="H3">CARROT</h3>
+          <p class="vegetables-price body-1">40 USD / kg</p>
+          <div class="carrot-image"></div>
+        </div>
       </li>
     </ul>
   </div>
-</article>
+</section>
+
+      <!-- reviews section -->
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="content">
+      <h2 class="reviews-title H2">
+        <span class="line line-1">REVIEWS</span>
+        <span class="line line-2">FROM </span>
+        <span class="line line-3">OUR</span>
+        <span class="line line-4 highlight">CUSTOMERS</span>
+      </h2>
+      <p class="reviews-description">
+        Words of our customers: Impressions and opinions about the quality of
+        our services and the freshness of our products.
+      </p>
+    </div>
+
+    <div class="owl-carousel owl-theme">
+      <div class="item">
+        <img
+          src="/project-TheBrainTeam-01/assets/customer-1-BWoaVi7z.jpg"
+          srcset="/project-TheBrainTeam-01/assets/customer-1@2x-DOm_BtQJ.jpg 2x"
+          alt="John Wax"
+          class="review-img"
+        />
+        <h3 class="review-name Accent-text">JOHN WAX</h3>
+        <p class="review-text body-1">
+          These vegetables are my secret to delicious and healthy meals. The
+          quality is always at the highest level, the aroma and taste are
+          enchanting. I advise every fan of real products!
+        </p>
+      </div>
+
+      <div class="item">
+        <img
+          src="/project-TheBrainTeam-01/assets/customer-2-BDJ6HbcH.jpg"
+          srcset="/project-TheBrainTeam-01/assets/customer-2@2x-DbWmO1lE.jpg 2x"
+          alt="Victoria Romashenko"
+          class="review-img"
+        />
+        <h3 class="review-name Accent-text">VICTORIA ROMASHENKO</h3>
+        <p class="review-text body-1">
+          I love how fast and fresh the vegetables are delivered. Salads always
+          turn out so appetizing, and soups are real masterpieces. The quality
+          is impeccable!
+        </p>
+      </div>
+
+      <div class="item">
+        <img
+          src="/project-TheBrainTeam-01/assets/customer-3-cD-BITi6.jpg"
+          srcset="/project-TheBrainTeam-01/assets/customer-3@2x-DxtbWVk1.jpg 2x"
+          alt="Ihor Trachuk"
+          class="review-img"
+        />
+        <h3 class="review-name Accent-text">IHOR TRACHUK</h3>
+        <p class="review-text body-1">
+          Recently tried my fresh tomatoes and peppers - amazing! The
+          authenticity of the taste, as if from the garden directly to my table.
+          It is now my main vegetable supplier.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- contact section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="hero-content">
+      <h2 class="H2 contact-heading">
+        FRESH <span class="H2 highlight">HARVEST</span> BOX HAS GOT YOU COVERED
+      </h2>
+      <div class="text-box">
+        <p class="body-1 subheading">
+          Our boxes are packed with delicious, nutritious vegetables, perfect
+          for anyone looking to eat healthier or support local farmers. Order
+          your box today and start enjoying the best that nature has to offer!
+        </p>
+      </div>
+    </div>
+
+    <div id="order" class="form-container">
+      <!-- Form bölümü start -->
+      <div class="contact-form">
+        <div class="H3 form-header">
+          <h3 class="H3 form-title">
+            Ordering <span class="H3 highlight-red">from us</span> is quick and
+            easy! Fill out
+            <span class="H3 highlight-green">the form</span> below and we will
+            contact you!
+          </h3>
+        </div>
+
+        <form class="form-fields">
+          <div class="input-group">
+            <input
+              type="text"
+              placeholder="Full Name"
+              name="name"
+              required
+              pattern="[A-Za-z\s]{2,}"
+              minlength="3"
+              title="Name should contain only letters and be at least 3 characters long"
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="email"
+              placeholder="Email"
+              name="email"
+              required
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              title="Please enter a valid email address"
+            />
+          </div>
+          <div class="input-group">
+            <textarea
+              placeholder="Comment"
+              name="comment"
+              required
+              minlength="10"
+              title="Comment should be at least 10 characters long"
+            ></textarea>
+          </div>
+          <button type="submit" class="Accent-text submit-btn">SEND</button>
+        </form>
+      </div>
+      <!-- form bölümü end -->
+      <div class="image-container">
+        <img
+          src="../img/contact-desktop.jpg"
+          srcset="../img/contact-desktop@2x.jpg 2x"
+          alt="Contact image"
+          class="contact-image"
+        />
+        <div class="social-follow">
+          <p class="body-2 social-text">Follow us on our social networks:</p>
+          <p class="Accent-text social-links">
+            <a
+              href="https://www.instagram.com/goit.turkiye/"
+              target="_blank"
+              rel="noopener"
+              >INSTAGRAM</a
+            >
+            <span class="divider">/</span>
+            <a
+              href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+              target="_blank"
+              rel="noopener"
+              >FACEBOOK</a
+            >
+            <span class="divider">/</span>
+            <a
+              href="https://m.youtube.com/@GoITTurkey"
+              target="_blank"
+              rel="noopener"
+              >YOUTUBE</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
     </main>
 
-    <footer class="footer">
+    <!-- footer section -->
+<footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="top-footer">
+      <div class="footer-content">
+        <!-- SVG İkonu -->
+        <img src="../img/logo-desktop.svg" alt="logo" class="footer-icon" />
+        <!-- Metin -->
+        <p class="body-1 footer-text">
+          Whether you're looking for a healthy snack or a thoughtful gift, our
+          fruit baskets are the perfect choice.
+        </p>
+      </div>
+      <div class="right-footer">
+        <!-- Sosyal medya ikonları -->
+        <div class="footer-links">
+          <ul class="H3 footer-links-list">
+            <li>
+              <a href="#about" class="footer-link-item">HOW IT WORKS</a>
+            </li>
+            <li>
+              <a href="#vegetables" class="footer-link-item">VEGETABLES</a>
+            </li>
+            <li><a href="#reviews" class="footer-link-item">REVIEWS</a></li>
+          </ul>
+        </div>
+        <!-- İletişim kutusu -->
+        <div class="body-2 footer-contact">
+          <p class="footer-contact-text">
+            <a href="tel:+380684439426" class="footer-contact-link"
+              >+380 (68) 443-94-26</a
+            >
+          </p>
+          <p class="footer-contact-text">
+            1678 S. Pioneer Road Salt Lake City UT 84104
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Alt bilgi -->
+    <div class="body-1 footer-bottom">
+      <div class="body-1 footer-policy">
+        <a href="#" class="policy-link">Privacy Policy</a>
+        <span class="separator">/</span>
+        <a href="#" class="policy-link">Cookie settings</a>
+      </div>
+      <p class="body-1 copyright">©Green Harvest 2023</p>
+    </div>
   </div>
 </footer>
 
+
+    <!-- Owl Carousel 2 JS Links -->
 
   </body>
 </html>
