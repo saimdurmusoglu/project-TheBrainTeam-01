@@ -1,0 +1,333 @@
+.vegetables {
+  display: flex;
+  justify-content: center;
+}
+
+.vegetables .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  background: var(--chianti);
+  padding: 80px 20px;
+  max-width: 375px;
+}
+
+/* -------------- TITLE & TEXT PROPERTIES -------------- */
+.vegetables .H2 {
+  width: 335px;
+  color: var(--white);
+}
+
+.vegetables .H2 span {
+  color: var(--blush);
+}
+
+.vegetables-description {
+  color: var(--white);
+  width: 335px;
+}
+
+.vegetables-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vegetables .H3 {
+  color: var(--chianti);
+}
+
+/* ------------- TITLE & TEXT PROPERTIES ENDS ------------- */
+
+/* ------------- LIST PROPERTIES ------------- */
+
+.vegetables-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.vegetables-list-item {
+  background: var(--white);
+  border-radius: 40px;
+  width: 335px;
+  padding: 32px 24px;
+  min-height: 376px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.list-item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 12px;
+  width: 287px;
+  min-height: 312px;
+}
+
+/* -------------- LIST PROPERTIES ENDS ------------- */
+
+/* -------------- IMAGE PROPERTIES -------------- */
+
+.eggplant-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/eggplant-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leek-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/leek-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mushroom-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/mushroom-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.corn-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/corn-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.potatoe-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/sweet-potatoes-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carrot-image {
+  display: block;
+  width: 280px;
+  height: 240px;
+  background-image: url(../img/carrot-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Retina screen properties for mobile devices */
+
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .eggplant-image {
+    background-image: url(../img/eggplant-mobile-2x.png);
+    max-width: 100%;
+  }
+
+  .leek-image {
+    background-image: url(../img/leek-mobile-2x.png);
+    max-width: 100%;
+  }
+
+  .mushroom-image {
+    background-image: url(../img/mushroom-mobile-2x.png);
+    max-width: 100%;
+  }
+
+  .corn-image {
+    background-image: url(../img/corn-mobile-2x.png);
+    max-width: 100%;
+  }
+
+  .potatoe-image {
+    background-image: url(../img/sweet-potatoes-mobile-2x.png);
+    max-width: 100%;
+  }
+
+  .carrot-image {
+    background-image: url(../img/carrot-mobile-2x.png);
+    max-width: 100%;
+  }
+}
+
+/* -------------- IMAGE PROPERTIES ENDS -------------- */
+
+/* ------------- TABLET PROPERTIES ------------- */
+
+@media only screen and (min-width: 768px) {
+  .vegetables .container {
+    max-width: 768px;
+    padding: 100px 32px;
+    gap: 52px;
+  }
+
+  .vegetables .H2 {
+    width: 508px;
+  }
+
+  .vegetables-description {
+    width: 626px;
+  }
+
+  .vegetables-header {
+    gap: 24px;
+  }
+
+  .vegetables-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 28px 24px;
+  }
+
+  .vegetables-list-item {
+    width: 340px;
+    min-height: 380px;
+    padding: 32px 30px;
+  }
+
+  .list-item-container {
+    width: 280px;
+    min-height: 316px;
+  }
+
+  /* -------------- IMAGE PROPERTIES FOR TABLET -------------- */
+
+  .eggplant-image {
+    background-image: url(../img/eggplant-tablet.png);
+  }
+
+  .leek-image {
+    background-image: url(../img/leek-tablet.png);
+  }
+
+  .mushroom-image {
+    background-image: url(../img/mushroom-tablet.png);
+  }
+
+  .corn-image {
+    background-image: url(../img/corn-tablet.png);
+  }
+
+  .potatoe-image {
+    background-image: url(../img/sweet-potatoes-tablet.png);
+  }
+
+  .carrot-image {
+    background-image: url(../img/carrot-tablet.png);
+  }
+
+  /* Retina screen properties for tablet devices */
+
+  @media (min-resolution: 2x) and (max-width: 1279px) {
+    .eggplant-image {
+      background-image: url(../img/eggplant-tablet-2x.png);
+    }
+
+    .leek-image {
+      background-image: url(../img/leek-tablet-2x.png);
+    }
+
+    .mushroom-image {
+      background-image: url(../img/mushroom-tablet-2x.png);
+    }
+
+    .corn-image {
+      background-image: url(../img/corn-tablet-2x.png);
+    }
+    .potatoe-image {
+      background-image: url(../img/sweet-potatoes-tablet-2x.png);
+    }
+
+    .carrot-image {
+      background-image: url(../img/carrot-tablet-2x.png);
+    }
+  }
+
+  /* -------------- IMAGE PROPERTIES ENDS -------------- */
+}
+
+/* ------------- TABLET PROPERTIES ENDS ------------- */
+
+/* ------------- DESKTOP PROPERTIES ------------- */
+
+@media only screen and (min-width: 1280px) {
+  .vegetables .container {
+    max-width: 1280px;
+    padding: 100px;
+  }
+
+  .vegetables-list-item {
+    width: 344px;
+  }
+
+  /* -------------- IMAGE PROPERTIES -------------- */
+
+  .eggplant-image {
+    height: 244px;
+    background-image: url(../img/eggplant-desktop.png);
+  }
+  .leek-image {
+    height: 244px;
+    background-image: url(../img/leek-desktop.png);
+  }
+  .mushroom-image {
+    height: 244px;
+    background-image: url(../img/mushroom-desktop.png);
+  }
+  .corn-image {
+    height: 244px;
+    background-image: url(../img/corn-desktop.png);
+  }
+
+  .potatoe-image {
+    height: 244px;
+    background-image: url(../img/sweet-potatoes-desktop.png);
+  }
+
+  .carrot-image {
+    height: 244px;
+    background-image: url(../img/carrot-desktop.png);
+  }
+
+  /* Retina screen properties for desktop devices */
+
+  @media (min-resolution: 2x) and (min-width: 1280px) {
+    .eggplant-image {
+      background-image: url(../img/eggplant-desktop-2x.png);
+    }
+
+    .leek-image {
+      background-image: url(../img/leek-desktop-2x.png);
+    }
+
+    .mushroom-image {
+      background-image: url(../img/mushroom-desktop-2x.png);
+    }
+
+    .corn-image {
+      background-image: url(../img/corn-desktop-2x.png);
+    }
+
+    .potatoe-image {
+      background-image: url(../img/sweet-potatoes-desktop-2x.png);
+    }
+
+    .carrot-image {
+      background-image: url(../img/carrot-desktop-2x.png);
+    }
+  }
+
+  /* -------------- IMAGE PROPERTIES ENDS -------------- */
+  /* -------------- DESKTOP PROPERTIES ENDS -------------- */
+}

@@ -1,0 +1,318 @@
+/* mobile screen */
+.about {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 375px;
+  height: 1208px;
+  background-color: var(--chianti);
+}
+
+.top-about {
+  min-width: 375px;
+  height: 532px;
+  margin: 0 auto;
+}
+
+.left {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px;
+}
+
+.left .image {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 335px;
+  height: 452px;
+  background-image: url('../img/about-mobile.jpg');
+  background-image: -webkit-image-set(
+    url('../img/about-mobile.jpg') 1x,
+    url('../img/about-mobile@2x.jpg') 2x
+  );
+  background-image: image-set(
+    url('../img/about-mobile.jpg') 1x,
+    url('../img/about-mobile@2x.jpg') 2x
+  );
+  background-repeat: no-repeat;
+  background-size: 335px 452px;
+  background-position: center center;
+}
+
+.bottom-about {
+  min-width: 375px;
+  height: 676px;
+  margin: 0 auto;
+  background-color: var(--green);
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 20px;
+  width: 375px;
+  height: 676px;
+}
+
+.right .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right h3 {
+  display: block;
+  text-transform: uppercase;
+  color: var(--white);
+  width: 335px;
+}
+
+.right h3 span {
+  color: var(--blush);
+}
+
+.right p {
+  display: block;
+  color: var(--white);
+  width: 335px;
+}
+
+.right .block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.right .block .box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  background-color: var(--white);
+  color: var(--black);
+  border-radius: 15px;
+  padding: 12px 27px 12px 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.right .block .box div::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 52px;
+  height: 52px;
+  background-color: var(--chianti);
+  border: 5px solid var(--blush);
+  border-radius: 26px;
+  z-index: 100;
+}
+
+.right .block .box div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 110;
+  width: 52px;
+  height: 52px;
+  padding: 20px;
+}
+
+.right .block .box div p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  width: 7px;
+  height: 20px;
+  z-index: 120;
+}
+
+.right .block .box p {
+  margin-bottom: 0;
+  display: block;
+  text-align: left;
+  align-items: center;
+  color: var(--black);
+  width: 211px;
+}
+
+/* tablet screen */
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .about .container {
+    width: 768px;
+    height: 1548px;
+  }
+
+  .top-about {
+    min-width: 768px;
+    height: 840px;
+  }
+
+  .left {
+    padding: 100px 64px;
+  }
+
+  .left .image {
+    width: 640px;
+    height: 640px;
+    background-image: url('../img/about-tablet.jpg');
+    background-image: -webkit-image-set(
+      url('../img/about-tablet.jpg') 1x,
+      url('../img/about-tablet@2x.jpg') 2x
+    );
+    background-image: image-set(
+      url('../img/about-tablet.jpg') 1x,
+      url('../img/about-tablet@2x.jpg') 2x
+    );
+    background-size: 640px 640px;
+  }
+
+  .bottom-about {
+    min-width: 768px;
+    height: 708px;
+  }
+
+  .right {
+    gap: 52px;
+    width: 768px;
+    height: 708px;
+    padding: 100px 164px;
+  }
+
+  .right .content {
+    gap: 24px;
+    width: 440px;
+  }
+
+  .right h3 {
+    width: 440px;
+  }
+
+  .right p {
+    width: 440px;
+  }
+
+  .right .block {
+    gap: 24px;
+  }
+
+  .right .block .box {
+    padding: 12px 25px 12px 24px;
+  }
+
+  .right .block .box p {
+    width: 325px;
+  }
+}
+
+/* desktop screen */
+@media only screen and (min-width: 1280px) {
+  .about .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    width: 1280px;
+    height: 760px;
+    margin: 0 auto;
+  }
+
+  .top-about {
+    width: 640px;
+    height: 760px;
+  }
+
+  .left {
+    width: 640px;
+    height: 760px;
+    padding: 100px;
+  }
+
+  .left .image {
+    width: 440px;
+    height: 560px;
+    background-image: url('../img/about-desktop.jpg');
+    background-image: -webkit-image-set(
+      url('../img/about-desktop.jpg') 1x,
+      url('../img/about-desktop@2x.jpg') 2x
+    );
+    background-image: image-set(
+      url('../img/about-desktop.jpg') 1x,
+      url('../img/about-desktop@2x.jpg') 2x
+    );
+    background-size: 440px 560px;
+  }
+
+  .bottom-about {
+    min-width: 640px;
+    height: 760px;
+  }
+
+  .right {
+    gap: 52px;
+    width: 640px;
+    height: 760px;
+    padding: 100px;
+  }
+
+  .right .content {
+    gap: 24px;
+    width: 440px;
+  }
+
+  .right h3 {
+    width: 440px;
+  }
+
+  .right p {
+    width: 440px;
+  }
+
+  .right .block {
+    gap: 24px;
+  }
+
+  .right .block .box {
+    padding: 12px 25px 12px 24px;
+  }
+
+  .right .block .box p {
+    width: 325px;
+  }
+}
+
+/* 2x screen resulations */
+@media (min-resolution: 2x) and (max-width: 767px) {
+  .left .image {
+    background-image: url('../img/about-mobile@2x.jpg');
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 768px) and (max-width: 1279px) {
+  .left .image {
+    background-image: url('../img/about-tablet@2x.jpg');
+  }
+}
+
+@media (min-resolution: 2x) and (min-width: 1280px) {
+  .left .image {
+    background-image: url('../img/about-desktop@2x.jpg');
+  }
+}
